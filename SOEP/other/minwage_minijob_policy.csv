@@ -1,0 +1,12 @@
+effective_date,minwage_nominal,minijob_cap_nominal,source_note,source_url
+2015-01-01,8.50,450,"Minimum wage introduced at 8.50 EUR/hour; minijob monthly earnings cap in force at 450 EUR.","https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html"
+2017-01-01,8.84,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2019-01-01,9.19,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2020-01-01,9.35,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2021-01-01,9.50,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2021-07-01,9.60,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2022-01-01,9.82,450,"Minimum wage adjustment; minijob cap unchanged.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2022-07-01,10.45,450,"Minimum wage adjustment; minijob cap unchanged until October 2022.","https://www.mindestlohn-kommission.de/DE/Mindestlohn/Bisherige-Anpassungen/bisherige-anpassungen_node.html"
+2022-10-01,12.00,520,"Minimum wage increased to 12.00 EUR/hour; minijob cap increased to 520 EUR/month.","https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html"
+2024-01-01,12.41,538,"Minimum wage increased to 12.41 EUR/hour; dynamic minijob cap increased to 538 EUR/month.","https://www.minijob-zentrale.de/DE/die-minijobs/verdienstgrenzen/verdienstgrenzen_node.html"
+2025-01-01,12.82,556,"Minimum wage increased to 12.82 EUR/hour; dynamic minijob cap increased to 556 EUR/month. The CPI file is updated through 2025, so this point is included in both nominal and real figures.","https://www.minijob-zentrale.de/DE/die-minijobs/verdienstgrenzen/verdienstgrenzen_node.html"

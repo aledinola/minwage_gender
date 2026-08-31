@@ -1,0 +1,32 @@
+
+. tabstat hours_actual [aweight=phrf],s(p50 mean) by(hours_type)
+
+Summary for variables: hours_actual
+Group variable: hours_type 
+
+hours_type |       p50      Mean
+-----------+--------------------
+    NE (0) |        21        21
+    ME (1) |        11   12.6158
+    PT (2) |        24  24.31817
+    FT (3) |        40  42.62549
+-----------+--------------------
+     Total |        40  37.29091
+--------------------------------
+
+. tabstat hours_agreed [aweight=phrf],s(p50 mean) by(hours_type)
+
+Summary for variables: hours_agreed
+Group variable: hours_type 
+
+hours_type |       p50      Mean
+-----------+--------------------
+    NE (0) |        21        21
+    ME (1) |        10   12.0797
+    PT (2) |        22  23.02554
+    FT (3) |        39  39.01409
+-----------+--------------------
+     Total |      38.5   34.6695
+--------------------------------
+
+. log close

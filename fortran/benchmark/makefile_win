@@ -1,0 +1,47 @@
+# Select Compiler
+COMPILER =  ifx
+
+# /fast should be a bundle of /O3 /Qipo /Qprec-div-
+# /Ofast =  -O3, -no-prec-div, and -fp-model fast=2.
+SWITCH =  /fpp /O3 /Qipo /Qopenmp /wrap-margin-
+
+SRCS = src\mod_linalg.f90 src\randgen.f src\mod_stats.f90 src\spline.f90 src\mod_pchip.f90 \
+src\toolbox.f90 src\mod_fitting.f90  src\mod_utilities.f90 src\mod_numerical.f90 src\mod_globals.f90 src\mod_output.f90 \
+src\simulated_annealing.f90 src/mod_nelder_meade.f90 src\mod_distribution.f90 \
+src\solve_household.f90 src\mod_firm.f90 src\mod_solvemodel.f90  src\mod_simulation.f90 \
+src\mod_estimation.f90 src\main.f90
+
+EXEC = exe\run_win.exe
+
+compile:
+	$(COMPILER) -o $(EXEC) $(SRCS) $(SWITCH)  
+
+compile_debug:
+	$(COMPILER) -o $(EXEC) $(SRCS) $(SWITCH_DEBUG)  
+	
+	
+run:
+	$(EXEC)
+	
+# Cleaning everything
+
+clean:
+	@if exist *.mod del /Q *.mod
+	@if exist *.obj del /Q *.obj
+	@if exist *.pdb del /Q *.pdb
+	@if exist *.ilk del /Q *.ilk
+	@if exist *__genmod.f90 del /Q *__genmod.f90
+	@if exist "$(EXEC)" del /Q "$(EXEC)"
+	
+	
+
+#To compile in Mac, type:
+# $ make -f makefile_mac
+
+#To compile in Windows, type:
+# $ nmake /f makefile_win
+# option flag /heap-arrays0
+# option for openMP:
+# /Qopenmp
+# to store all arrays on the heap
+# see https://community.intel.com/t5/Intel-Fortran-Compiler/allocatable-automatic-stack-heap/m-p/1229091#M152713
